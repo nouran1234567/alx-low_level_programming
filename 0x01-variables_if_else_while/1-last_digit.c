@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - print the last digit of the number stored in the variable n
- * and whether it is greater than 5 , 6 or 0
+ * main - entry point
+ *
+ * description: print the last digit of the number stored in the variable n
  *
  * return: Always 0 (success)
 */
