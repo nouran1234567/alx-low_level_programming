@@ -1,4 +1,4 @@
-#include<unistd.h>
+#include<stdio.h>
 /**
  * main - Entry point
  *
@@ -8,13 +8,14 @@
 */
 int main(void)
 {
-	int n = 97;
+	char ch = 'a'
 
-	while (n <= 122)
+	while (ch <= 'z')
 	{
-		putchar(n);
-		n++;
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
+
 	return (0);
 }
