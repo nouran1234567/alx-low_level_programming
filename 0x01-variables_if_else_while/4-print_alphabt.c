@@ -14,7 +14,7 @@ int main(void)
 
 
 	while
-		(ch <= 'z');
+	(ch <= 'z');
 
 	{
 		if (ch == 'e' || ch == 'q')
