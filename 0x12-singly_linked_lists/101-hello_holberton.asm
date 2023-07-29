@@ -3,8 +3,9 @@ section         .text
 	extern   printf
 
 main:
-	xor   eax, eax
 	mov   edi, format
+	xor   eax, eax
+	call  printf
 	mov   eax, 0
 	call printf  
 	ret
