@@ -4,19 +4,19 @@
 /**
  * list_len - detemins length of singly linked list
  *
- * @h: pointer to the list_t list
+ * @h: pointer to the list_t first node
  *
  * Return: size of list
  */
 size_t list_len(const list_t *h)
 {
-	size_t m = 0;
+	size_t x = 0;
 
 	while (h)
 	{
-		m++;
+		x++;
 		h = h->next;
 	}
-	return (m);
+	return (x);
 }
 

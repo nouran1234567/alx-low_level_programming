@@ -5,7 +5,8 @@
 /**
  * add_node - adds a node to the start of a singly  linked list
  *
- * @head: double pointer to the list_t list
+ * @head: double pointer to the list_t first node
+ *
  * @str: string field of node
  *
  * Return: size of list
