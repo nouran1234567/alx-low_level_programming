@@ -7,7 +7,6 @@ main:
 	xor   eax, eax
 	call  printf
 	mov   eax, 0
-	call printf  
 	ret
 
 format: db `Hello, Holberton\n`,0
