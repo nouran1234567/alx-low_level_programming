@@ -34,3 +34,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 listint_t *reverse_listint(listint_t **head);
 size_t free_listint_safe(listint_t **h);
 int _puchar(char c);
+
+#endif
+
