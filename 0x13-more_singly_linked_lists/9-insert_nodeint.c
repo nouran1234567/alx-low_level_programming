@@ -6,7 +6,7 @@
  * @head: pointer to the first node in a singly linked list
  *
  * @idx: index where the new node is inserted
- * 
+ *
  * @n: value to be inserted in the new node
  *
  * Return: pointer to the node, or NULL
