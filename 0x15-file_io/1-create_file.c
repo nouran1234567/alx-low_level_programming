@@ -13,7 +13,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd = 0;
-	int number = 0;
+	int wt = 0;
 	int len = 0;
 
 	if (filename == NULL)
@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	number = write(fd, text_content, len);
+	wt = write(fd, text_content, len);
 
 	if (fd == -1 || number == -1)
 		return (-1);
