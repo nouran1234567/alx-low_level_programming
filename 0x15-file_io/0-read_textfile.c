@@ -8,24 +8,24 @@
  *
  * @letters: number of bytes to be read
  *
- * Return: number- number of bytes read/printed 
+ * Return: number of letters read/printed. if fails, return 0
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buf;
 	ssize_t fd;
-	ssize_t number;
-	ssize_t text;
+	ssize_t wt;
+	ssize_t rd;
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
-	text = read(fd, buf, letters);
-	number = write(STDOUT_FILENO, buf, text);
+	rd = read(fd, buf, letters);
+	wt = write(STDOUT_FILENO, buf, rd);
 
 	free(buf);
 	close(fd);
-	return (number);
+	return (wt);
 }
