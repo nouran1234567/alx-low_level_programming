@@ -10,6 +10,8 @@
 
 void free_dlistint(dlistint_t *head)
 {
+	dlistint_t *z;
+
 	if (head == NULL)
 	return;
 	while (head->next)
