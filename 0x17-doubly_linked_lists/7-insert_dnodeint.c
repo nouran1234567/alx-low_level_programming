@@ -12,28 +12,28 @@
  * Return: new node address , else NULL
  */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **z, unsigned int idx, int n)
 {
 	dlistint_t *nov;
 	dlistint_t *head;
-	unsigned int z;
+	unsigned int x;
 
 	nov = NULL;
 	if (idx == 0)
-		nov = add_dnodeint(h, n);
+		nov = add_dnodeint(z, n);
 	else
 	{
-		head = *h;
-		z = 1;
+		head = *z;
+		x = 1;
 		if (head != NULL)
 			while (head->prev != NULL)
 				head = head->prev;
 		while (head != NULL)
 		{
-			if (z == idx)
+			if (x == idx)
 			{
 				if (head->next == NULL)
-					nov = add_dnodeint_end(h, n);
+					nov = add_dnodeint_end(z, n);
 				else
 				{
 					nov = malloc(sizeof(dlistint_t));
@@ -49,7 +49,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 				break;
 			}
 			head = head->next;
-			z++;
+			x++;
 		}
 	}
 
